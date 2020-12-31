@@ -1,0 +1,30 @@
+[
+    { "shoulders" : 
+        [
+		{
+			"disease" : "Frozen Shoulder or ‘Adhesive Capsulitis",
+            "symptoms" : [ "Pain", 
+                            "Stiffness" ,
+                            "Pain when sleeping" ]
+		},
+		{
+			"disease" : "Rotator Cuff Injury",
+            "symptoms" : [ "weakness in your arm",
+                           "Pain when lifting your arm above your head" ,
+                           "Pain in the top and outer side of your shoulder",
+						   "pain or aching at night, which can affect your sleep"]
+		},
+		{
+			"disease" : "Shoulder Bursitis",
+			"symptoms" : [ "Pain", "Achy pain" , "Tender or warm joint", "Swelling or redness"]
+		},
+		{
+			"disease" : "Shoulder Separation Injury",
+            "symptoms" : [ "Pain when moving the arm",
+                           "Unability to move the arm" ,
+                           "Shoulder looks square rather than round", 
+						   "Lump or bulge under the skin in front of your shoulder"]
+		}
+    ]
+}
+]
