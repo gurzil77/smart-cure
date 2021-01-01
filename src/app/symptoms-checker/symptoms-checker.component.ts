@@ -7,13 +7,13 @@ import { SymptomsCheckerService } from '../services/symptoms-checker.service';
   styleUrls: ['./symptoms-checker.component.css']
 })
 export class SymptomsCheckerComponent implements OnInit {
-  alert=""
+  private userSymptomsArray
   constructor(public symptomsCheckerService : SymptomsCheckerService ) { 
   }
   ngOnInit()  {
     this.symptomsCheckerService.selectedBodypart.subscribe(
-      (value) =>{this.alert= value
-                 
+      (value) =>{this.symptomsCheckerService.alertBodyPart(value)
+                this.symptomsCheckerService.toggleJson(value)   
       }
 
     )
