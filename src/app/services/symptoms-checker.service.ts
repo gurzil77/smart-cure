@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { EventEmitter } from "@angular/core";
-import  *  as  symptoms  from  '../../assets/symptoms.json';
+import   symptoms  from  '../../assets/symptoms.json';
 
 
 @Injectable({providedIn: 'root'})
@@ -18,9 +18,9 @@ export class SymptomsCheckerService {
         alert(value)
     }
     toggleJson(bodyPart) {
-        let bodyPartConverted = JSON.stringify(bodyPart)
          symptoms.find((el) => {
-          el === bodyPart }
+            console.log(el === bodyPart )
+             }
          )}
          
 }
