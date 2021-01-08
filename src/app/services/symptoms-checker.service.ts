@@ -18,9 +18,21 @@ export class SymptomsCheckerService {
         alert(value)
     }
     toggleJson(bodyPart) {
-         symptoms.find((el) => {
-            console.log(el === bodyPart )
+        let find = symptoms.filter((el) => {
+                return el.bodypart == bodyPart
              }
-         )}
+         )  
+            let toggleSymptoms = find.filter((el => {
+                return JSON.stringify(el["diseases list"]).includes("symptoms")
+            }))
+
+            let iterat = [...toggleSymptoms][0]["diseases list"]
+            for (const symptom of iterat) {
+                if (!this.selectedBodypartSymptoms.includes(el => (symptom.symptoms == el ))) {
+                    this.selectedBodypartSymptoms.push(...symptom.symptoms)
+                    console.log(this.selectedBodypartSymptoms)
+                }
+            }
+        }
          
 }

@@ -1,6 +1,6 @@
 [
-    { "shoulders" : 
-        [
+	{ "bodypart" : "shoulders",
+	   "diseases list" : [
 		{
 			"disease" : "Frozen Shoulder or ‘Adhesive Capsulitis",
             "symptoms" : [ "Pain", 
@@ -28,8 +28,8 @@
     ]
 },
 
-
-    { "chest" : 
+{ "bodypart" : "chest",
+  "diseases list" : 
         [
 		{
 			"disease" : "Frozen chest",
@@ -57,7 +57,8 @@
 		}
     ]
 },
-{ "abdomen" : 
+{ "bodypart" : "abdomen",
+  "diseases list" :  
 	[
 	{
 		"disease" : "Frozen chest",
