@@ -17,7 +17,7 @@ export class SymptomsCheckerService {
     alertBodyPart(value) {
         alert(value)
     }
-    toggleJson(bodyPart) {
+ /*   toggleJson(bodyPart) {
         let find = symptoms.filter((el) => {
                 return el.bodypart == bodyPart
              }
@@ -34,5 +34,13 @@ export class SymptomsCheckerService {
                 }
             }
         }
-         
+         */
+    toggleJson(bodyPart) {
+        const symptom = symptoms.find((s) => {
+        return s.bodypart === bodyPart;
+      }
+    );
+
+    return [...new Set(symptom.diseasesList.flatMap(diseaseList => diseaseList.symptoms))];
+  }
 }

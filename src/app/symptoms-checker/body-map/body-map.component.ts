@@ -1,4 +1,5 @@
 import { Component, OnInit, Output } from '@angular/core';
+import { EventEmitter } from 'events';
 import { SymptomsCheckerService } from '../../services/symptoms-checker.service'
 
 @Component({
@@ -12,7 +13,7 @@ export class BodyMapComponent implements OnInit {
   
   ngOnInit(): void {
   }
-  shoulderWasClicked(event){
+  bodyPartWasClicked(event){
     this.symptomsCheckerService.updateBodyPart(event.target.id)
   }
 }

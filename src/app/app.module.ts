@@ -12,6 +12,7 @@ import { DiseasesListComponent } from './symptoms-checker/diseases-list/diseases
 import { DiseaseDetailComponent } from './symptoms-checker/diseases-list/disease-detail/disease-detail.component';
 import { CureMainComponent } from './cure-main/cure-main.component';
 import { BodyMapComponent } from './symptoms-checker/body-map/body-map.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BodyMapComponent } from './symptoms-checker/body-map/body-map.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

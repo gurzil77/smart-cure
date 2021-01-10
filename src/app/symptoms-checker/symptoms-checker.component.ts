@@ -10,13 +10,22 @@ export class SymptomsCheckerComponent implements OnInit {
    ourArray
   constructor(public symptomsCheckerService : SymptomsCheckerService ) { 
   }
-  ngOnInit()  {
+  ngOnInit() {
     this.symptomsCheckerService.selectedBodypart.subscribe(
       (value) =>{this.symptomsCheckerService.alertBodyPart(value)
-                this.symptomsCheckerService.toggleJson(value) 
-                this.ourArray= this.symptomsCheckerService.selectedBodypartSymptoms
+                this.ourArray =this.symptomsCheckerService.toggleJson(value) 
+                //this.ourArray= this.symptomsCheckerService.selectedBodypartSymptoms(value)
       }
     )
+  }
+
+  toggleWithGreeting(popover) {
+    let myArray = this.ourArray
+    if (popover.isOpen() && !this.ourArray) {
+      popover.close();
+    } else {
+      popover.open({myArray});
+    }
   }
 
 
