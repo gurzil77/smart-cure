@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { SymptomsCheckerService } from '../services/symptoms-checker.service';
+import { ModalService } from '../services/modal.service'
 
 @Component({
   selector: 'app-symptoms-checker',
@@ -7,25 +8,17 @@ import { SymptomsCheckerService } from '../services/symptoms-checker.service';
   styleUrls: ['./symptoms-checker.component.css']
 })
 export class SymptomsCheckerComponent implements OnInit {
-   ourArray
-  constructor(public symptomsCheckerService : SymptomsCheckerService ) { 
+  selectedBodypartSymptoms  = []
+  @ViewChild('checkbox') checkbox
+  constructor(public symptomsCheckerService : SymptomsCheckerService, private modalService : ModalService ) { 
   }
   ngOnInit() {
     this.symptomsCheckerService.selectedBodypart.subscribe(
-      (value) =>{this.symptomsCheckerService.alertBodyPart(value)
-                this.ourArray =this.symptomsCheckerService.toggleJson(value) 
-                //this.ourArray= this.symptomsCheckerService.selectedBodypartSymptoms(value)
-      }
+      (value) =>{//this.symptomsCheckerService.alertBodyPart(value)
+                this.selectedBodypartSymptoms =this.symptomsCheckerService.toggleJson(value)
+                this.modalService.open(this.checkbox)
+              }
     )
-  }
-
-  toggleWithGreeting(popover) {
-    let myArray = this.ourArray
-    if (popover.isOpen() && !this.ourArray) {
-      popover.close();
-    } else {
-      popover.open({myArray});
-    }
   }
 
 

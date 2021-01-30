@@ -1,14 +1,11 @@
+<div class="image2"></div>
 <app-body-map></app-body-map>
-    
-<div 
-     ngbPopover="popContent"
-     [autoClose]="false"
-     triggers="manual"
-     #p="ngbPopover" 
-     ngIf="toggleWithGreeting(p)" 
-     popoverTitle="Check your symptoms">
-        <ng-template #popContent let-symptoms="myArray" *ngFor="let item of ourArray" class="container">{{item}}
-            <input type="checkbox">
-        </ng-template>
+<div #checkbox *ngIf="!selectedBodypartSymptoms === null">
+    <select>
+        <option *ngFor="let symptom of selectedBodypartSymptoms"> {{symptom}} </option>
+    </select>
 </div>
- 
+<app-nav></app-nav>
+
+
+  

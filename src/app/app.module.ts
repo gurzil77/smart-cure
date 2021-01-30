@@ -12,7 +12,7 @@ import { DiseasesListComponent } from './symptoms-checker/diseases-list/diseases
 import { DiseaseDetailComponent } from './symptoms-checker/diseases-list/disease-detail/disease-detail.component';
 import { CureMainComponent } from './cure-main/cure-main.component';
 import { BodyMapComponent } from './symptoms-checker/body-map/body-map.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -29,8 +29,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    NgbModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

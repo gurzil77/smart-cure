@@ -3,33 +3,26 @@
 	   "diseasesList" : [
 		{
 			"disease" : "Frozen Shoulder or ‘Adhesive Capsulitis",
-            "symptoms" : [ "Pain", 
-                            "Stiffness" ,
-                            "Pain when sleeping" ]
+            "body" : "<h1>Frozen shoulder</h1> <article><section><p><b>Frozen shoulder means your shoulder is painful and stiff for months, sometimes years. It can be treated with shoulder exercises and painkillers.</b></p></section>"
+
 		},
 		{
 			"disease" : "Rotator Cuff Injury",
-            "symptoms" : [ "weakness in your arm",
-                           "Pain when lifting your arm above your head" ,
-                           "Pain in the top and outer side of your shoulder",
-						   "pain or aching at night, which can affect your sleep"]
+            "body" : "<h1>Rotator Cuff Injury</h1> <p> I am Rotator Cuff Injury Body </p>"
 		},
 		{
 			"disease" : "Shoulder Bursitis",
-			"symptoms" : [ "Pain", "Achy pain" , "Tender or warm joint", "Swelling or redness"]
+			"body" : "<h1>Shoulder Bursitis</h1> <p> I am Shoulder Bursitis Body </p>"
 		},
 		{
 			"disease" : "Shoulder Separation Injury",
-            "symptoms" : [ "Pain when moving the arm",
-                           "Unability to move the arm" ,
-                           "Shoulder looks square rather than round", 
-						   "Lump or bulge under the skin in front of your shoulder"]
+            "body" : "<h1>Shoulder Bursitis</h1> <p> I am Shoulder Bursitis Body </p>"
 		}
     ]
 },
 
-{ "bodypart" : "chest",
-  "diseasesList" : 
+	{ "bodypart" : "chest",
+	"diseasesList" : 
         [
 		{
 			"disease" : "Frozen chest",

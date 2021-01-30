@@ -8,15 +8,15 @@ import   symptoms  from  '../../assets/symptoms.json';
 
 export class SymptomsCheckerService {
      public selectedBodypart = new EventEmitter()
-     public selectedBodypartSymptoms = []
 
     
     updateBodyPart(bodypart){
         this.selectedBodypart.emit(bodypart)
     }
-    alertBodyPart(value) {
+    /*alertBodyPart(value) {
         alert(value)
-    }
+    }*/
+
  /*   toggleJson(bodyPart) {
         let find = symptoms.filter((el) => {
                 return el.bodypart == bodyPart

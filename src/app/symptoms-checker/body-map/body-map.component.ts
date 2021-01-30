@@ -10,10 +10,15 @@ import { SymptomsCheckerService } from '../../services/symptoms-checker.service'
 export class BodyMapComponent implements OnInit {
 
   constructor(private symptomsCheckerService : SymptomsCheckerService ) { }
-  
+  front = true;
+  back = false;
   ngOnInit(): void {
   }
   bodyPartWasClicked(event){
     this.symptomsCheckerService.updateBodyPart(event.target.id)
+  }
+  onButtonClick(){
+    this.front = !this.front
+    this.back = !this.back
   }
 }
